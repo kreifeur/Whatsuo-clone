@@ -214,7 +214,7 @@
           <div
             class="h-[10%] bg-gray-100 flex flex-row-reverse items-center justify-between px-2 relative"
           >
-            <ul class="bg-white absolute w-[250px] text-right top-[80%] left-4">
+            <ul id="dropdown" class="bg-white absolute w-[250px] text-right top-[80%] left-4 hidden">
               <li class="p-4 flex gap-2 justify-end items-center">
                 <span>تحويل لزميل</span>
                 <i class="fa-solid fa-share text-xl"></i>
@@ -256,7 +256,9 @@
             </div>
             <!-- icons -->
             <ul class="flex gap-8 px-8 text-xl">
-              <i class="text-gray-600 fa-solid fa-ellipsis-vertical cursor-pointer"></i>
+              <i id="dropicon"
+                class="text-gray-600 fa-solid fa-ellipsis-vertical cursor-pointer"
+              ></i>
             </ul>
           </div>
 
@@ -366,5 +368,7 @@
         </div>
       </div>
     </div>
+    <!-- js file -->
+    <script src="script.js"></script>
   </body>
 </html>
